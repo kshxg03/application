@@ -1,11 +1,21 @@
 import styles from "./footer.module.css"
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.logo}>Bislerium</div>
+      <div className={styles.logo}>Bislerium Pvt. Ltd.</div>
+      <div className={styles.linkSection}>
+        <div>
+          Pages
+        </div>
+        <div className={styles.links}>
+          <Link href="/">Home</Link>
+          <Link href="/blogs">Blogs</Link>
+        </div>
+      </div>
       <div className={styles.text}>
-        Bislerium Pvt. Ltd. @All rights reserved.
+        copyright@Bislerium2024
       </div>
     </div>
   );
